@@ -41,18 +41,20 @@ The model was evaluated using a stratified 80/20 train-test split on an 800-emai
 
 | Metric | Score |
 | :--- | :--- |
-| **Accuracy** | **100.0%** |
-| **Precision (Legitimate)** | **1.00** |
-| **Recall (Legitimate)** | **1.00** |
-| **Precision (Phishing)** | **1.00** |
-| **Recall (Phishing)** | **1.00** |
-| **F1-Score (Macro Avg)** | **1.00** |
+| **Accuracy** | **98.75%** |
+| **Precision (Legitimate)** | **0.99** |
+| **Recall (Legitimate)** | **0.99** |
+| **Precision (Phishing)** | **0.99** |
+| **Recall (Phishing)** | **0.99** |
+| **F1-Score (Macro Avg)** | **0.99** |
 
-### Confusion Matrix Breakdown
-* **True Legitimate (Safe):** 386
-* **True Phishing (Caught Threat):** 414
-* **False Phishing (False Alarm):** 0
-* **False Legitimate (Missed Phish):** 0
+### Confusion Matrix Breakdown (Test Split: 160 Samples)
+* **True Legitimate (Safe):** 76
+* **True Phishing (Caught Threat):** 82
+* **False Phishing (False Alarm):** 1
+* **False Legitimate (Missed Phish):** 1
+
+> **Note:** The minor edge cases reflect real-world scenarios such as promotional newsletters featuring urgency cues or stealthy text attacks with masked domains.
 
 ---
 
